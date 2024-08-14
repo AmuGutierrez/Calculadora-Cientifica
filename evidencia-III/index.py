@@ -1,48 +1,5 @@
-import math
+from operaciones_basicas import *
 
-def suma(a, b):
-    return a + b
-
-def resta(a, b):
-    return a - b
-
-def multiplicacion(a, b):
-    return a * b
-
-def division(a, b):
-    if b != 0:
-        return a / b
-    else:
-        return "Error: División por cero"
-
-def potencia(base, exponente):
-    return base ** exponente
-
-def raiz_cuadrada(a):
-    return math.sqrt(a)
-
-def seno(angulo_grados):
-    return math.sin(math.radians(angulo_grados))
-
-def coseno(angulo_grados):
-    return math.cos(math.radians(angulo_grados))
-
-def tangente(angulo_grados):
-    return math.tan(math.radians(angulo_grados))
-
-# Función para calcular el logaritmo natural
-def logaritmo_natural(a):
-    return math.log(a)
-
-# Función para calcular el logaritmo en base 10
-def logaritmo_base_10(a):
-    return math.log10(a)
-
-# Función para calcular el factorial de un número entero
-def factorial(a):
-    return math.factorial(a)
-
-# Función principal para la calculadora
 def calculadora():
     print("Bienvenido a la Calculadora Científica")
     print("Operaciones disponibles:")
@@ -99,4 +56,5 @@ def calculadora():
             print("Opción no válida. Por favor ingrese un número del 0 al 12.")
 
 # Ejecutar la calculadora
-calculadora()
+if __name__ == "__main__":
+    calculadora()
